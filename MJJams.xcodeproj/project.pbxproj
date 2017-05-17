@@ -12,6 +12,11 @@
 		858BEB6A1ECB9EAF00CB590B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858BEB691ECB9EAF00CB590B /* Assets.xcassets */; };
 		858BEB6D1ECB9EAF00CB590B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858BEB6B1ECB9EAF00CB590B /* LaunchScreen.storyboard */; };
 		858BEB781ECB9FB900CB590B /* MJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BEB771ECB9FB900CB590B /* MJViewController.swift */; };
+		858BEB7A1ECBA98400CB590B /* ItunesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BEB791ECBA98400CB590B /* ItunesClient.swift */; };
+		858BEB7C1ECBB3B200CB590B /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BEB7B1ECBB3B200CB590B /* SongCell.swift */; };
+		858BEB7E1ECBE71E00CB590B /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BEB7D1ECBE71E00CB590B /* Tracks.swift */; };
+		858BEB821ECC1E3D00CB590B /* UIImageServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BEB811ECC1E3D00CB590B /* UIImageServer.swift */; };
+		858BEB841ECC9F9500CB590B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BEB831ECC9F9400CB590B /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		858BEB6C1ECB9EAF00CB590B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		858BEB6E1ECB9EAF00CB590B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		858BEB771ECB9FB900CB590B /* MJViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJViewController.swift; sourceTree = "<group>"; };
+		858BEB791ECBA98400CB590B /* ItunesClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesClient.swift; sourceTree = "<group>"; };
+		858BEB7B1ECBB3B200CB590B /* SongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		858BEB7D1ECBE71E00CB590B /* Tracks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		858BEB811ECC1E3D00CB590B /* UIImageServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageServer.swift; sourceTree = "<group>"; };
+		858BEB831ECC9F9400CB590B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +64,11 @@
 		858BEB611ECB9EAF00CB590B /* MJJams */ = {
 			isa = PBXGroup;
 			children = (
-				858BEB761ECB9F5200CB590B /* ViewControllers */,
-				858BEB751ECB9F4900CB590B /* Views */,
 				858BEB741ECB9F3F00CB590B /* Model */,
+				858BEB751ECB9F4900CB590B /* Views */,
+				858BEB761ECB9F5200CB590B /* ViewControllers */,
+				858BEB7F1ECBE9A700CB590B /* API */,
+				858BEB801ECC1E1500CB590B /* Extentions */,
 				858BEB621ECB9EAF00CB590B /* AppDelegate.swift */,
 				858BEB661ECB9EAF00CB590B /* Main.storyboard */,
 				858BEB691ECB9EAF00CB590B /* Assets.xcassets */,
@@ -69,6 +81,7 @@
 		858BEB741ECB9F3F00CB590B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				858BEB7D1ECBE71E00CB590B /* Tracks.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -76,6 +89,7 @@
 		858BEB751ECB9F4900CB590B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				858BEB7B1ECBB3B200CB590B /* SongCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -84,8 +98,25 @@
 			isa = PBXGroup;
 			children = (
 				858BEB771ECB9FB900CB590B /* MJViewController.swift */,
+				858BEB831ECC9F9400CB590B /* DetailViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		858BEB7F1ECBE9A700CB590B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				858BEB791ECBA98400CB590B /* ItunesClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		858BEB801ECC1E1500CB590B /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				858BEB811ECC1E3D00CB590B /* UIImageServer.swift */,
+			);
+			name = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858BEB821ECC1E3D00CB590B /* UIImageServer.swift in Sources */,
+				858BEB7E1ECBE71E00CB590B /* Tracks.swift in Sources */,
+				858BEB7C1ECBB3B200CB590B /* SongCell.swift in Sources */,
+				858BEB7A1ECBA98400CB590B /* ItunesClient.swift in Sources */,
 				858BEB631ECB9EAF00CB590B /* AppDelegate.swift in Sources */,
 				858BEB781ECB9FB900CB590B /* MJViewController.swift in Sources */,
+				858BEB841ECC9F9500CB590B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
